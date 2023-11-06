@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity!!</title>
+    <style>
+        h1{
+            color: blueviolet;
+        }
+        .name{
+            color: aquamarine;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        [draggable = true]{
+            color: cornflowerblue;
+        }
+         
+        h1.cred{
+            color: chartreuse;
+        }
+
+        /* specificity order
+          !important(10,000) > inline style(1000) > Id selctor(100) > Class  or Attribute(10)> element selector(1) > universal selctor(0) 
+        */
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="name cred cpurple" draggable="true">Pratiksha kshirsagar</h1>
+    
+</body>
+</html>
