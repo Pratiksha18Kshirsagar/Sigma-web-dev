@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            background-color: pink;
+            border: 2px solid black;
+        }
+
+        .boxes::before{
+            content: "Pratiksha";
+            color: rgb(243, 42, 42);
+        }
+        .boxes::after{
+            content: "Kshirsagar";
+            color: rgb(225, 16, 229);
+        }
+        .box:nth-last-child(2){
+            background-color: aquamarine;
+        }
+        .box:nth-child(2){
+            font-style: italic;
+        }
+        ::selection{
+            color: chartreuse;
+            background-color: black;
+        }
+        .box:nth-child(odd){
+            background-color: cadetblue;
+        }
+        .box[data-color = "primary"]{
+         background-color: chartreuse;
+        }
+        .box::first-letter{
+            font-size: 30px;
+        }
+        p::first-line{
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am box 1!</div>
+        <div class="box">I am box 2!</div>
+        <div class="box">I am box 3!</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eos dignissimos impedit nihil voluptates maxime. Possimus quasi esse obcaecati odit illum quaerat natus ullam aut quidem, autem laudantium eligendi vel!</p>
+    </div>
+    
+</body>
+</html>
