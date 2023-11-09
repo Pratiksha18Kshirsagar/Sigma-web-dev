@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Variables</title>
+    <style>
+        :root {
+            --color: rgb(232, 179, 188);
+            --defpad: 23px;
+        }
+
+        ul {
+            background-color: blueviolet;
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 20px;
+        }
+
+        .div1 {
+            background-color: rgb(188, 139, 236);
+        }
+
+        ul :first-child {
+            --color: rgba(0, 255, 238, 454);
+            background-color: var(--color);
+            padding: var(--defpad);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facilis dignissimos culpa deserunt
+            molestiae sint dolorum incidunt aliquid explicabo ex?</p>
+    </div>
+
+</body>
+
+</html>
