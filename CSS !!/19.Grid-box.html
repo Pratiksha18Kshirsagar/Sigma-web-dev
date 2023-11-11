@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Box</title>
+    <style>
+        .container {
+            height: 80vh;
+            border: 2px solid white;
+            background-color: rgba(207, 95, 95, 0.562);
+            display: grid;
+            /* grid-template-columns: [first]110px [second]110px [third];
+            grid-template-rows: [first]110px [second]110px [third]; */
+            /* grid-template-areas: "nav nav nav"
+                "side article article"
+                "footer footer footer"; */
+                grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .item {
+            background-color: brown;
+            /* height: 100px;
+            width: 100px; */
+            margin: 10px;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* .four {
+            grid-row: first/second;
+            grid-column: first/second;
+            grid-area: article;
+
+        }
+
+        .one {
+            grid-area: nav;
+
+        }
+
+        .two {
+            grid-area: side;
+        }
+
+        .three {
+            grid-area: article;
+        }
+
+        .five {
+            grid-area: footer;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+        <div class="item five">5</div>
+    </div>
+</body>
+
+</html>
