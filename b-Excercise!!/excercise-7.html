@@ -36,11 +36,10 @@
         .container {
             justify-items: center;
             display: grid;
-            grid-template-columns: 200px 200px 200px;
+            grid-template-columns: 280px 280px 280px;
             background-color: white;
-            width: 80vw;
-            margin-left: 300px;
-            margin-top: 20px;
+            width: 65vw;
+            margin: auto;
             gap: 10px;
 
         }
@@ -50,7 +49,7 @@
             background-color: whitesmoke;
             height: 120px;
             margin: 2px;
-            width: 200px;
+            width: 260px;
 
         }
 
@@ -60,6 +59,41 @@
             font-weight: 700;
             font-family: "Segoe UI";
 
+        }
+
+        .btn {
+            background-color: #00b6d1;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .btn1 {
+            background-color: #00d084;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        @media  screen and (max-width : 1000px) {
+            .container{
+                grid-template-columns: 1fr;
+;
+            }
+            .boxes{
+                width: 100%;
+            }
+            
         }
     </style>
 </head>
@@ -112,33 +146,63 @@
         <div class="container">
             <div class="boxes">
                 <p>ENGLISH </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>FRENCH </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>ITALIAN </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>DUTCH </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>PORTUGUESE </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>AMERICAN </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>ARABIC </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>HINDI </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>TAMIL </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
             <div class="boxes">
                 <p>KANNADA </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
             </div>
         </div>
     </main>
