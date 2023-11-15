@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise-8</title>
+    <style>
+        .container{
+            background-color: purple;
+            height: 80vh;
+            width: 60vw;
+            position: relative;
+        }
+        .box{
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+             animation: pratiksha1 5s ease-in-out 1s infinite  , 
+            pratiksha2 5s ease-in 1s infinite  
+            ; 
+            
+            
+        }
+        @keyframes pratiksha1 {
+            from{
+
+            }
+            to{
+               transform: translatey(-250px);
+            }
+            
+        }
+        @keyframes pratiksha2 {
+            from{
+
+            }
+            to{
+                transform: translateX(250px);
+            }
+        } 
+        /* @keyframes pratiksha3 {
+            from{
+                transform: translatey(-250px);
+            }
+            to{
+               transform: translateY(-250px);
+            }
+            
+        }
+        @keyframes pratiksha4 {
+            from{
+                transform: translateX(250px);
+            }
+            }
+            to{
+               transform: translateX(500px);
+        } 
+         */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

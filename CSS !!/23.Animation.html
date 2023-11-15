@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation!!</title>
+    <style>
+        .container{
+            background-color: rgb(241, 241, 194);
+            height: 80vh;
+            width: 60vw;
+
+        }
+        .box{
+            background-color: rgb(143, 234, 237);
+            height: 100px;
+            width: 100px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: pratikshaAnimation 10s ease-in-out 5s 2;
+        }
+        @keyframes pratikshaAnimation {
+            from{
+background-color: pink;
+            }
+            to{
+            background-color: darkmagenta;
+            transform: translateX(500px);
+            /* transform: rotate(300deg); */
+            /* transform: scale(50); */
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Pratiksha
+        </div>
+    </div>
+    
+</body>
+</html>
