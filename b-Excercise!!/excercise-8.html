@@ -20,27 +20,27 @@
             bottom: 0;
             left: 0;
             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-             animation: pratiksha1 5s ease-in-out 1s infinite  , 
-            pratiksha2 5s ease-in 1s infinite  
+             animation: pratiksha1 2s linear infinite alternate , 
+            pratiksha2   1s ease-out infinite alternate  
             ; 
             
             
         }
         @keyframes pratiksha1 {
             from{
-
+             left: 0%;
             }
             to{
-               transform: translatey(-250px);
+               left: 100%;
             }
             
         }
         @keyframes pratiksha2 {
             from{
-
+             bottom: 0%;
             }
             to{
-                transform: translateX(250px);
+                bottom: 100%;
             }
         } 
         /* @keyframes pratiksha3 {
