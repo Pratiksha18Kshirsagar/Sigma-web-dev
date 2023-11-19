@@ -4,72 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .main {
-            height: 80vh;
-            background-image: url(../Netflix-using-html-css/Assets!!/Images/bg-image.jpg);
-            position: relative;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: max(1200px,100vw);
-
-        }
-
-       .main .box {
-            height: 80vh;
-            width: 100%;
-            opacity: 0.44;
-            background-color: black;
-            position: absolute;
-            top: 0;
-
-        }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 80vw;
-            margin: auto;
-            height: 80px;
-            
-        }
-        nav img{
-            position: relative;
-            z-index: 10;
-        }
-        nav button{
-            position: relative;
-            z-index: 10;
-        }
-    </style>
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="stye.css">
 </head>
 
 <body>
     <div class="main">
         <nav>
-            <span><img  height="28"  
-            src="./Assets!!/Images/logo.svg" alt=""></span>
+            <span><img height="28" src="./Assets!!/Images/logo.svg" alt=""></span>
             <div>
-            <button>English</button>
-            <button>Sign In</button></div>
+                <button class="btn-sm">English</button>
+                <button class=" btn-sm-red   ">Sign In</button>
+            </div>
         </nav>
         <div class="box">
-           
+
         </div>
-        <div>
-            The biggest Indian hits. Ready to watch here from ₹ 149.
-            Join today. Cancel anytime.
-            
-            Ready to watch? Enter your email to create or restart your membership.
+        <div class="hero">
+            <span>The biggest Indian hits. Ready to watch
+                here from ₹ 149.</span>
+            <span> Join today. Cancel anytime.</span>
+
+            <span> Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="flex">
+                <input class="email" type="text" placeholder="Email Address">
+                <button class="btn-red">Get Started &gt</button>
+            </div>
         </div>
 
+        <div class="separation">
+
+        </div>
     </div>
+    <section class="first">
+        <div class="text">
+            <span>Enjoy on your TV</span>
+            <span> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+        </div>
+        <div class="img">
+            <img src="./Assets!!/Images/tv-1.png" alt="">
+            <video src="./Assets!!/videos/video-tv-1.m4v " autoplay muted loop></video>
+        </div>
+
+    </section>
+    <div class="separation">
+
+    </div>
+    <section class="first">
+
+        <div class="img">
+            <img src="./Assets!!/Images/mobile-2.jpg" alt="">
+
+        </div>
+        <div class="text">
+            <span>Download your shows</span>
+            <span> to watch offline
+                Save your favourites easily and always have something to watch.</span>
+        </div>
+
+    </section>
+    <div class="separation">
+
+    </div>
+    <section class="first three">
+        <div class="text">
+            <span> Watch everywhere</span>
+            <span>
+                Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+        </div>
+        <div class="img">
+            <img src="./Assets!!/Images/tv-3.png" alt="">
+            <video src="./Assets!!/videos/video-tv-2.m4v " autoplay muted loop></video>
+        </div>
+
+    </section>
+    <div class="separation">
+
+    </div>
+    <section class="first">
+
+        <div class="img">
+            <img src="./Assets!!/Images/children-4.png" alt="">
+
+        </div>
+        <div class="text">
+            <span> Create profiles for kids</span>
+            <span>
+
+                Send children on adventures with their favourite characters in a space made just for them—free with your
+                membership..</span>
+        </div>
+    </section>
+    <div class="separation">
+
+    </div>
+    <section>
+        <h1>Frequently Asked Questions</h1>
+        <div class="faqbox">
+            <span>What is Netflix ?
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></span>
+            <span>How much does Netflix Cost ?
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></span>
+            <span>Where can I watch ?
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></span>
+            <span>How do I cancel ?
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></span>
+            <span>What can I watch on Netflix ?
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></span>
+            <span>Is Netflix good for kids?
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></span>
+        </div>
+        <div class="hero2">
+            <span> Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="flex">
+                <input class="email" type="text" placeholder="Email Address">
+                <button class="btn-red">Get Started &gt</button>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="separation">
+
+    </div>
+    <section class="footer">
+        <h3> Questions? Call 000-800-919-1694</h3>
+        <div class="foot">
+       
+       
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#"> Help Centre</a></div>
+            <div><a href="#"> Account</a></div>
+            <div><a href="#"> Media Centre</a></div>
+            <div><a href="#"> Investor Relations</a></div>
+            <div><a href="#"> Jobs</a></div>
+            <div><a href="#"> Ways to Watch</a></div>
+            <div><a href="#"> Terms of Use</a></div>
+            <div><a href="#"> Privacy</a></div>
+            <div> <a href="#">Cookie Preferences</a></div>
+            <div><a href="#"> Corporate Information</a></div>
+            <div><a href="#"> Contact Us</a></div>
+            <div><a href="#"> Speed Test</a></div>
+            <div><a href="#">Legal Notices</a></div>
+            <div><a href="#"> Only on Netflix</a></div>
+
+        </div>
+        <button class="btn-sm-2">English</button>
+    </section>
 </body>
 
 </html>
