@@ -5,6 +5,7 @@
 
 body {
     background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main {
@@ -84,6 +85,9 @@ nav button {
     background-color: rgb(46, 44, 44);
     ;
     height: 7px;
+    position: relative;
+    z-index: 20;
+
 }
 
 .flex {
@@ -252,13 +256,14 @@ h1 {
     font-weight: 400;
     margin-top: 40px;
 }
-.hero2 > div{
+
+.hero2>div {
     margin-bottom: 80px;
 }
 
 .foot {
     display: grid;
-    grid-template-rows:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
     justify-content: center;
@@ -266,15 +271,18 @@ h1 {
     width: 80vw;
     margin: auto;
 }
-h3{
+
+h3 {
     color: white;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 120px;
 }
-a{
+
+a {
     color: white;
 }
+
 .btn-sm-2 {
     color: white;
     background-color: rgba(23, 23, 23, 0.7);
@@ -288,10 +296,65 @@ a{
     margin-left: 120px;
 }
 
-@media screen and (max-width:1000px){
-    .first{
+
+@media screen and (max-width:1000px) {
+
+    .first,
+    nav,
+    .hero,
+    .text,
+    .flex,
+    .faqbox,
+    .hero2 {
         flex-wrap: wrap;
     }
+}
 
-    
+@media screen and (max-width:950px) {
+    .hero>:nth-child(1) {
+        font-size: 32px;
+        font-weight: 900;
+        font-family: 'Martel Sans', sans-serif;
+        text-align: center;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .hero>:nth-child(3) {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+    .foot {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .first img {
+        width: 423px;
+    }
+
+    .first video,
+    .three video {
+        width: 364px;
+    }
+
 }
