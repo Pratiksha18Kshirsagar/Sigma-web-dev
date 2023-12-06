@@ -43,7 +43,7 @@
 
 //loops in Arrays!!
 
-var a = [20, 93, 88, 57];
+// var a = [20, 93, 88, 57];
 
 // for (let index = 0; index < a.length; index++) {
 //     console.log(a[index]);
@@ -69,7 +69,7 @@ var a = [20, 93, 88, 57];
 //     if (Object.hasOwnProperty.call(obj, key)) {
 //         const element = obj[key];
 //         console.log(key,element);
-        
+
 //     }
 // }
 
@@ -99,4 +99,18 @@ var a = [20, 93, 88, 57];
 // function reduced(a,b){
 // return a+b;
 // }
-// console.log(q.reduce(reduced));
+// console.log(q.reduce(reduced));\
+
+
+var word1 = ["pratiksha", "kshirsagar"];
+var word2 = ["pratiksha", "kshirsagar"];
+var arrayStringsAreEqual = function (word1, word2) {
+
+    const str1 = word1.join('');
+    const str2 = word2.join('');
+    return str1 === str2;
+
+};
+console.log(arrayStringsAreEqual(word1,word2));
+
+
