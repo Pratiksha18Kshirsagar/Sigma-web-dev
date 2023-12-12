@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model!!</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box" id="boxid">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <script>
+        document.querySelector(".box").style.backgroundColor = "pink";
+        document.getElementsByClassName("box")[1].style.color = " red";
+        document.getElementById("boxid").style.color = "green";
+        document.querySelectorAll(".box").forEach(e => {
+            e.style.backgroundColor = " yellow";
+        })
+
+        let e = document.body.firstElementChild.children;
+       console.log( e[2].matches("#boxid"));
+
+       console.log(e[2].closest(".container"));
+
+       console.log(e[2].closest("#boxid"));
+
+       console.log(document.body.firstElementChild.contains(e[2]));
+
+    </script>
+</body>
+
+
+</html>

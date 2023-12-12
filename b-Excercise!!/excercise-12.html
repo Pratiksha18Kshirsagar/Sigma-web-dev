@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 45px;
+            border: 2px solid black;
+            margin: 10px;
+            /* background-color: palevioletred; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        function randomColor(){
+            let random = Math.floor(Math.random()*9)+1;
+            let list =["pink" , "yellow" , "purple" , "orange" ,"greenyellow" , "palevioletred" , "brown" , "aqua" , "red" , "blue"];            
+           return list[random];
+        }
+        let boxes = document.getElementsByClassName("box");
+        boxes[0].style.backgroundColor = randomColor();
+        boxes[1].style.backgroundColor = randomColor();
+        boxes[2].style.backgroundColor = randomColor();
+        boxes[3].style.backgroundColor = randomColor();
+        boxes[4].style.backgroundColor = randomColor();
+        boxes[5].style.backgroundColor = randomColor();
+
+    </script>
+</body>
+</html>
