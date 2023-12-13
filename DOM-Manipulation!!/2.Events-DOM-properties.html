@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Properties</title>
+</head>
+<body>
+    <h1>mona!!</h1>
+    <div class="container" style="background-color: aqua;">
+        <div class="box" style="color: green;">HI , I am box 1!!</div>
+        <div class="box">HI , I am box 2!!</div>
+    </div>
+
+    <script>
+        let a = document.querySelector(".container");
+        
+        console.log(a.tagName);
+        console.log(a.nodeName);
+        console.log(a.innerHTML);
+        console.log(a.innerText);
+        console.log(a.outerHTML);
+        console.log(a.textContent);
+        console.log(a.hasAttribute("style"));
+        // console.log(a.hidden = true);
+        // console.log(a.removeAttribute("style"));
+        // console.log(a.setAttribute("style" , "color:red"));
+        console.log(a.getAttribute("style"));
+        console.log(a.attributes);;
+
+//INSERTION METHODS
+let b = document.createElement('div');
+ a.append(b);
+// a.prepend(b);
+// a.before(b);
+// a.after(b);
+// let c = document.querySelector("h1");
+// b.replaceWith(c);
+
+// a.insertAdjacentHTML("beforebegin" , "<p>Prati</p>");
+//  a.insertAdjacentHTML("afterbegin" , "<p>Hey</p>");
+//  a.insertAdjacentHTML("beforeend" , "<p>Hey</p>");
+//  a.insertAdjacentHTML("afterend" , "<p>Hey</p>");
+
+
+//CLASSNAME CLASSLIST ADD REMOVE!!
+
+b.classList.add("NewClass");
+// b.classList.remove("NewClass");
+// b.classList.toggle("NewClass")
+console.log(b.classList.contains("NewClass"));
+        
+    </script>
+</body>
+</html>
