@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event listner</title>
     <style>
-        .container{
+        .container {
             height: 100px;
-            
             padding: 14px;
             border: 2px solid rgb(21, 47, 39);
             background-color: aquamarine;
         }
-    .childcontainer{
-        height: 60px;
-       
-        
-        padding: 10px;
-        width: 80%;
-        background-color: pink;
-    }
-    .child{
-        height: 40px;
-        width: 90%;
-        margin: 10px;
-        padding: 1px;
-        background-color: plum;
-    }
 
+        .childcontainer {
+            height: 60px;
+            padding: 10px;
+            width: 80%;
+            background-color: pink;
+        }
+
+        .child {
+            height: 40px;
+            width: 90%;
+            margin: 10px;
+            padding: 1px;
+            background-color: plum;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="childcontainer">
@@ -38,41 +38,48 @@
             </div>
         </div>
     </div>
-   
+
     <script>
-        let container= document.querySelector(".container");
-        let child=document.querySelector(".child");
-        let childcontainer=document.querySelector(".childcontainer");
-        
+        let container = document.querySelector(".container");
+        let child = document.querySelector(".child");
+        let childcontainer = document.querySelector(".childcontainer");
+
         // container.addEventListener("click",()=>{
         //     alert("The container was clicked");
         // })
         // container.addEventListener("dblclick",()=>{
         //     alert("The container was clicked");
         // })
-        child.addEventListener("click",(e)=>{
+        
+        child.addEventListener("click", (e) => {
             e.stopPropagation();
             alert("The child was clicked");
         })
-        childcontainer.addEventListener("click",()=>{
-           
+        childcontainer.addEventListener("click", () => {
+
             alert("The childcontainer was clicked");
         })
-        container.addEventListener("click",()=>{
+        container.addEventListener("click", () => {
             alert("The container was clicked");
         })
-        function randomColor(){
-            let random = Math.floor(Math.random()*9)+1;
-            let list =["pink" , "yellow" , "purple" , "orange" ,"greenyellow" , "palevioletred" , "brown" , "aqua" , "red" , "blue"];            
-           return list[random];
+
+
+        function randomColor() {
+            let random = Math.floor(Math.random() * 9) + 1;
+            let list = ["pink", "yellow", "purple", "orange", "greenyellow", "palevioletred", "brown", "aqua", "red", "blue"];
+            return list[random];
         }
+
+
         let a = setInterval(() => {
-            container.style.backgroundColor=randomColor();
+            container.style.backgroundColor = randomColor();
         }, 3000);
-  console.log(a);
+        console.log(a);
         clearInterval(1);
+
+
         let b = setTimeout(() => {
-            childcontainer.style.backgroundColor=randomColor();
+            childcontainer.style.backgroundColor = randomColor();
         }, 3000);
         clearTimeout(1);
 
@@ -80,4 +87,5 @@
 
     </script>
 </body>
+
 </html>
