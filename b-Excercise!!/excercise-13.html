@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+        .card {
+            display: flex;
+            border: 2px solid black;
+            width: 900px;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        img {
+            width: 200px;
+
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .capsule {
+            background-color: rgba(0, 0, 0, 0.667);
+            color: white;
+            display: inline;
+            position: absolute;
+            bottom: 4px;
+            left: 150px;
+            border-radius: 5px;
+            padding: 4px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+                    alt="">
+                <div class="capsule">31:22</div>
+            </div>
+
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Dev video #2</h1>
+                <p>CodeWithHarry . 560K views . 7 months ago</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        function createCard(title, cName, views, monthsOld, duration, thumbnail) {
+
+            if (views < 1000) {
+                views = views;
+            }
+            else if (views > 1000000) {
+                views = views / 1000000 + "M";
+            }
+            else {
+                views = views / 1000 + "K ";
+            }
+            let html = ` <div class="card">
+            <div class="image">
+                <img src="${thumbnail}"
+                    alt="">
+                <div class="capsule">${duration}</div>
+            </div>
+            <div class="text">
+                <h1>${title}</h1>
+                <p>${cName} . ${views}views . ${monthsOld}months ago</p>
+            </div>
+        </div>`
+            document.querySelector(".container").innerHTML = document.querySelector(".container").innerHTML + html;
+        }
+
+        createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 56000, 7, "31:22", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw")
+        createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 8600000000, 7, "31:22", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw")
+        createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 56, 7, "31:22", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw")
+    </script>
+</body>
+
+</html>
