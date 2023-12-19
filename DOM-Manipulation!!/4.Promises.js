@@ -11,9 +11,9 @@ let a = new Promise((resolve, reject) => {
 
 a.then(
     function (value) {
-        console.log((value));
+        console.log(value);
     },
     function (error) {
-        console.log((error));
+        console.log(error);
     }
 );
