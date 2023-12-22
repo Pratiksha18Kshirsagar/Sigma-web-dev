@@ -16,7 +16,7 @@ let pip = {
 
 for (const k in pip) {
     const element = pip[k];
-    console.log(k, element);
+    console.log( element);
 }
 
 //For off!!

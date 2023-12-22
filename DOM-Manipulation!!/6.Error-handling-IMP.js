@@ -14,6 +14,7 @@ function main() {
     try {
         return console.log(sum * x);
     } catch (error) {
+        console.log(error.name);   //optional understanding!!
       return  console.log("Sorry HANDU error aa gaya!!");
     }
 

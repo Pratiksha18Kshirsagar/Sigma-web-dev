@@ -15,5 +15,5 @@ a.then(
     },
     function (error) {
         console.log(error);
-    }
+    } 
 );

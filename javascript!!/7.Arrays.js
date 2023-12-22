@@ -102,15 +102,15 @@
 // console.log(q.reduce(reduced));\
 
 
-var word1 = ["pratiksha", "kshirsagar"];
-var word2 = ["pratiksha", "kshirsagar"];
-var arrayStringsAreEqual = function (word1, word2) {
+// var word1 = ["pratiksha", "kshirsagar"];
+// var word2 = ["pratiksha", "kshirsagar"];
+// var arrayStringsAreEqual = function (word1, word2) {
 
-    const str1 = word1.join('');
-    const str2 = word2.join('');
-    return str1 === str2;
+//     const str1 = word1.join('');
+//     const str2 = word2.join('');
+//     return str1 === str2;
 
-};
-console.log(arrayStringsAreEqual(word1,word2));
+// };
+// console.log(arrayStringsAreEqual(word1,word2));
 
 
