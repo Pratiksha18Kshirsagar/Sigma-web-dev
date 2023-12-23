@@ -51,24 +51,25 @@
         async function main() {
             setInterval(() => {
                 let last = document.body.lastElementChild;
-                if (last.innerHTML.endsWith("...")){
-                    last.innerHTML = last.innerHTML.slice(0 , last.innerHTML.length-3);
+                if (last.innerHTML.endsWith("...")) {
+                    last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
                 }
-                else{
-                    last.innerHTML  = last.innerHTML + ".";
+                else {
+                    last.innerHTML = last.innerHTML + ".";
                 }
-               
+
             }, 700);
             for (const iterator of text) {
                 await addText(iterator);
             }
-           
 
+            await randomDelay();
+            clearInterval(1);
         }
-        
+
         main();
 
-        
+
     </script>
 </body>
 
