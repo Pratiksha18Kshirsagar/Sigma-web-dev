@@ -24,7 +24,7 @@ class Animal {
     }
 
     eats() {
-        console.log("I am eating!!")
+        console.log("I am eating!!") 
     }
 
     jumps() {

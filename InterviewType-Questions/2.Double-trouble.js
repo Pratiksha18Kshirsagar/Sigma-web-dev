@@ -1,6 +1,6 @@
 
 function doubleTheElement() {
-    let arr = [1, 1, 2, 3, 3, 4, 5, 1, 2];
+    let arr = [1, 1, 2, 3, 3, 4, 5, 1, 2, 7 ,7 , 8];
     let double = [];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == arr[i + 1]) {
