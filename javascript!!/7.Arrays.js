@@ -95,11 +95,11 @@
 
 
 //REDUCE!!
-// let q = [1,2,3,4,5,6];
-// function reduced(a,b){
-// return a+b;
-// }
-// console.log(q.reduce(reduced));\
+let q = [1,2,3,4,5,6];
+function reduced(a,b){
+return a+b;
+}
+console.log(q.reduce(reduced));
 
 
 // var word1 = ["pratiksha", "kshirsagar"];
