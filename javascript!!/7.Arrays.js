@@ -81,6 +81,14 @@
 // })
 // console.log(newarr);
 
+const numbers = [1, 2, 3, 4, 5];
+
+const squareNumbers = numbers.map(number => {
+  return number * number;
+});
+
+console.log(squareNumbers);
+
 
 //FILTER!!....
 
@@ -93,6 +101,14 @@
 // }
 // console.log(k.filter(greaterThanFive));
 
+const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
+
+const onlyNumbers = things.filter(thing => {
+  return typeof thing === 'number';
+});
+
+console.log(onlyNumbers);
+
 
 //REDUCE!!
 let q = [1,2,3,4,5,6];
@@ -100,6 +116,36 @@ function reduced(a,b){
 return a+b;
 }
 console.log(q.reduce(reduced));
+
+
+const newNumbers = [1, 3, 5, 7];
+
+const newSum = newNumbers.reduce((accumulator , currentValue)=>{
+console.log('The value of accumulator: ', accumulator);
+console.log('The value of currentValue: ', currentValue);
+return accumulator + currentValue;
+},10)
+console.log(newSum);
+
+//findIndex
+const jumbledNums = [123, 25, 78, 5, 9]; 
+
+const lessThanTen = jumbledNums.findIndex(num => {
+  return num < 10;
+});
+
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(i=>{
+  return i == 'elephant';
+})
+
+const startsWithS = animals.findIndex(i=>{
+  return i[0] == 's'
+})
+
+
 
 
 // var word1 = ["pratiksha", "kshirsagar"];
