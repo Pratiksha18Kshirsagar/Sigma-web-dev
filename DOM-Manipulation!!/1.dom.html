@@ -27,20 +27,21 @@
     </div>
     <script>
         document.querySelector(".box").style.backgroundColor = "pink";
-        document.getElementsByClassName("box")[1].style.color = " red";
+        document.getElementsByClassName("box")[1].style.color = "orange";
         document.getElementById("boxid").style.color = "green";
         document.querySelectorAll(".box").forEach(e => {
             e.style.backgroundColor = " yellow";
         })
 
         let e = document.body.firstElementChild.children;
-       console.log( e[2].matches("#boxid"));
+       console.log( e[3].matches("#boxid"));
 
        console.log(e[2].closest(".container"));
 
        console.log(e[2].closest("#boxid"));
 
-       console.log(document.body.firstElementChild.contains(e[2]));
+let container = document.body.firstElementChild;
+       console.log(container.contains(e[5]));
 
     </script>
 </body>

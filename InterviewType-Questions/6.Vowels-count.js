@@ -38,9 +38,9 @@ let count = 0;
 // }
 
 let vowels = 'aeiouAEIOU';
-function countVowels(){
+function countVowels() {
     for (const i of str) {
-        if(vowels.includes(i)){
+        if (vowels.includes(i)) {
             count++
         }
     }

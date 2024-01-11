@@ -7,21 +7,23 @@
     }
     )
 }
+
+let a;
 async function anyName(){
 console.log("loading mode");
 console.log("loading mode");
-await getdata();
-console.log(getdata());
+ a = await getdata();
+console.log(a);
 console.log("Data has processed!!")
 }
-anyName()
+ anyName()
 // console.log(getdata());
 // getdata().then((V) => {
 //     console.log(getdata())
 
 //     console.log("loading mode")
 //     console.log("loading data") 
-// // }
-// // );
+// }
+// );
 
 

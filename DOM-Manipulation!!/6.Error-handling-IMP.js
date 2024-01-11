@@ -15,7 +15,7 @@ function main() {
         return console.log(sum * x);
     } catch (error) {
         console.log(error.name);   //optional understanding!!
-      return  console.log("Sorry HANDU error aa gaya!!");
+      return  console.log("Sorry  error aa gaya!!");
     }
 
     //Finally works in the function , even after return ..

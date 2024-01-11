@@ -1,4 +1,4 @@
-console.log("I hate Promises!!");
+console.log(" Promises!!");
 let a = new Promise((resolve, reject) => {
     let x = 0;
     if (x == 0) {
