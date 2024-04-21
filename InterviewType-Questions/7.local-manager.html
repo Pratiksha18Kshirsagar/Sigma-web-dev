@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LOCAL STORAGE MANAGER</title>
+</head>
+
+<body>
+   <script>
+      function saveNoteToLocalStorage(note) {
+         localStorage.setItem("note", note);
+         let a = localStorage.getItem("note");
+         document.write(a);
+      }
+      saveNoteToLocalStorage("Hii BVC!!"); </script>
+</body>
+
+</html>

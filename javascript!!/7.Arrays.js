@@ -1,4 +1,4 @@
-// var arr = [1, 2, 5, 6];
+var arr = [1, 2, 5, 6];
 // console.log(arr);
 // console.log(arr.length);
 // console.log(arr[0]);
@@ -10,19 +10,23 @@
 // console.log(arr[0]);
 // console.log(arr);
 
-// console.log(arr.toString());
-// console.log(arr.join("-"));
+console.log(arr.toString());
+console.log(arr.join("-"));
 
-// console.log(arr.pop());
-// console.log(arr);
+// pop and push works from end!!
 
-// console.log(arr.push(500));
-// console.log(arr);
+console.log(arr.pop());
+console.log(arr);
 
-// console.log(arr.shift());
-// console.log(arr);
-// console.log(arr.unshift("jack"));
-// console.log(arr);
+console.log(arr.push(500));
+console.log(arr);
+
+// shift and unshift works from th beginning!!
+
+console.log(arr.shift());
+console.log(arr);
+console.log(arr.unshift("jack"));
+console.log(arr);
 
 // console.log(delete(arr[0]));
 // console.log(arr);
@@ -34,16 +38,16 @@
 // var c = [7,8,9];
 // console.log(a.concat(b ,c ));
 
-// var d = [30 , 10 , 20 , 1];
-// console.log(d.sort());
-// console.log(d.splice(1,2 , 888 , 999));
-// console.log(d);
+var d = [30 , 10 , 20 , 1];
+console.log(d.sort());
+console.log(d.splice(1,2 , 888 , 999));
+console.log(d);
 
 
 
 //loops in Arrays!!
 
-// var a = [20, 93, 88, 57];
+ var a = [20, 93, 88, 57];
 
 // for (let index = 0; index < a.length; index++) {
 //     console.log(a[index]);
@@ -51,9 +55,9 @@
 
 
 
-// a.forEach((element , index ,value)=> {
-//     console.log(element , index ,value);
-// });
+a.forEach((element , index ,value)=> {
+    console.log(element , index ,value);
+});
 
 
 
@@ -81,13 +85,13 @@
 // })
 // console.log(newarr);
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-const squareNumbers = numbers.map(number => {
-  return number * number;
-});
+// const squareNumbers = numbers.map(number => {
+//   return number * number;
+// });
 
-console.log(squareNumbers);
+// console.log(squareNumbers);
 
 
 //FILTER!!....
@@ -101,49 +105,49 @@ console.log(squareNumbers);
 // }
 // console.log(k.filter(greaterThanFive));
 
-const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
+// const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
 
-const onlyNumbers = things.filter(thing => {
-  return typeof thing === 'number';
-});
+// const onlyNumbers = things.filter(thing => {
+//   return typeof thing === 'number';
+// });
 
-console.log(onlyNumbers);
-
-
-//REDUCE!!
-let q = [1,2,3,4,5,6];
-function reduced(a,b){
-return a+b;
-}
-console.log(q.reduce(reduced));
+// console.log(onlyNumbers);
 
 
-const newNumbers = [1, 3, 5, 7];
-
-const newSum = newNumbers.reduce((accumulator , currentValue)=>{
-console.log('The value of accumulator: ', accumulator);
-console.log('The value of currentValue: ', currentValue);
-return accumulator + currentValue;
-},10)
-console.log(newSum);
-
-//findIndex
-const jumbledNums = [123, 25, 78, 5, 9]; 
-
-const lessThanTen = jumbledNums.findIndex(num => {
-  return num < 10;
-});
+// //REDUCE!!
+// let q = [1,2,3,4,5,6];
+// function reduced(a,b){
+// return a+b;
+// }
+// console.log(q.reduce(reduced));
 
 
-const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+// const newNumbers = [1, 3, 5, 7];
 
-const foundAnimal = animals.findIndex(i=>{
-  return i == 'elephant';
-})
+// const newSum = newNumbers.reduce((accumulator , currentValue)=>{
+// console.log('The value of accumulator: ', accumulator);
+// console.log('The value of currentValue: ', currentValue);
+// return accumulator + currentValue;
+// },10)
+// console.log(newSum);
 
-const startsWithS = animals.findIndex(i=>{
-  return i[0] == 's'
-})
+// //findIndex
+// const jumbledNums = [123, 25, 78, 5, 9]; 
+
+// const lessThanTen = jumbledNums.findIndex(num => {
+//   return num < 10;
+// });
+
+
+// const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+// const foundAnimal = animals.findIndex(i=>{
+//   return i == 'elephant';
+// })
+
+// const startsWithS = animals.findIndex(i=>{
+//   return i[0] == 's'
+// })
 
 
 

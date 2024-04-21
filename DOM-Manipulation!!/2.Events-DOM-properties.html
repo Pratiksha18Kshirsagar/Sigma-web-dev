@@ -12,20 +12,33 @@
     <div class="container" style="background-color: aqua;">
         <div class="box" style="color: green;">HI , I am box 1!!</div>
         <div class="box">HI , I am box 2!!</div>
+        <h2>pratiksha</h2>
+        <input type="text" name="" id="">
     </div>
 
     <script>
         let a = document.querySelector(".container");
+        let name = document.querySelector("h2");
+        let h1 = document.querySelector("h1");
+        let input = document.querySelector("input");
+        name.innerHTML = "momo"; 
+        input.value = name.innerHTML;
+        h1.innerHTML = input.value;
 
+        console.log(input.value);
+        console.log(a);
         console.log(a.tagName);
         console.log(a.nodeName);
         console.log(a.innerHTML);
+
         // innertext returns oly the text removes whitespaces even if it is given
         console.log(a.innerText);
         console.log(a.outerHTML);
+
         // textcontent returns the text as it is even if you have white spaces as it is 
-        console.log(a.textContent); 
+        console.log(a.textContent);
         console.log(a.hasAttribute("style"));
+
         // console.log(a.hidden = true);
         // console.log(a.removeAttribute("style"));
         // console.log(a.setAttribute("style" , "color:red"));
