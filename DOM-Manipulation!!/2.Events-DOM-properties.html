@@ -29,10 +29,10 @@
         console.log(a);
         console.log(a.tagName);
         console.log(a.nodeName);
-        console.log(a.innerHTML);
+        console.log(a.innerHTML); //includes tags
 
         // innertext returns oly the text removes whitespaces even if it is given
-        console.log(a.innerText);
+        console.log(a.innerText); //removes tags
         console.log(a.outerHTML);
 
         // textcontent returns the text as it is even if you have white spaces as it is 
@@ -47,17 +47,17 @@
 
         //INSERTION METHODS
         let b = document.createElement('div');
-        a.append(b);
-        // a.prepend(b);
-        // a.before(b);
-        // a.after(b);
+        //  a.append(b);//inside container last
+        // a.prepend(b);//inside container first
+        // a.before(b);//before container outside
+        //  a.after(b);//after container tag
         // let c = document.querySelector("h1");
         // b.replaceWith(c);
 
         // a.insertAdjacentHTML("beforebegin" , "<p>Prati</p>");
         //  a.insertAdjacentHTML("afterbegin" , "<p>Hey</p>");
         //  a.insertAdjacentHTML("beforeend" , "<p>Hey</p>");
-        //  a.insertAdjacentHTML("afterend" , "<p>Hey</p>");
+        //  a.insertAdjacentHTML("afterend" , "<p>Hey</p>");//outside
 
 
         //CLASSNAME CLASSLIST ADD REMOVE!!
